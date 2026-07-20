@@ -2,7 +2,7 @@ let customerData = {};
 
 async function loadCustomerData() {
     try {
-        const response = await fetch("../Customer/data.json");
+        const response = await fetch("Customer/data.json");
         customerData = await response.json();
         
         console.log("Customer Data Loaded:", customerData);
