@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PuzzleWish | Premium</title>
+<link rel="icon" type="image/png" href="Assets/Images/favicon.png">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/premium.css">
+
+</head>
+
+<body class="step-1">
+
+<div class="container">
+
+<div class="logo">
+PuzzleWish
+</div>
+<div class="premium-badge">
+    ✨ Premium Experience ✨
+</div>
+<div class="tagline">
+Premium Experience
+</div>
+
+<h1 class="heading">
+Your Memory Awaits ✨
+</h1>
+<p class="description">
+Take a deep breath...
+
+<br><br>
+
+Every beautiful memory starts with a single moment. 💜
+</p>
+
+<h1 id="countdown" class="heading">
+05
+</h1>
+
+<div class="progress">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div>
+
+</div>
+<script>
+
+let count = 5;
+
+const countdown = document.getElementById("countdown");
+
+countdown.innerHTML = "05";
+
+const timer = setInterval(function(){
+
+    count--;
+
+    if(count > 0){
+
+        countdown.innerHTML =
+        count < 10 ? "0" + count : count;
+
+    }else{
+
+        clearInterval(timer);
+
+        window.location.href = "puzzle.html";
+
+    }
+
+},1000);
+
+</script>
+<script src="js/app.js"></script>
+</body>
+
+</html>

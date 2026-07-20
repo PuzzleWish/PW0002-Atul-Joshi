@@ -1,0 +1,813 @@
+/* ===================================
+   PuzzleWish Premium Theme
+=================================== */
+
+/* ===================================
+   Premium Background
+=================================== */
+
+body{
+
+    background:
+
+    radial-gradient(circle at top left,
+    rgba(108,59,255,.18),
+    transparent 45%),
+
+    radial-gradient(circle at bottom right,
+    rgba(236,72,153,.15),
+    transparent 45%),
+
+    linear-gradient(
+    135deg,
+    #fcfbff 0%,
+    #f7f1ff 45%,
+    #fff6fb 100%);
+
+}
+
+/* Premium Logo */
+
+.logo{
+    color:#5b21b6;
+    letter-spacing:2px;
+}
+
+/* Premium Heading */
+
+.heading{
+    color:#3f2a85;
+    
+}
+
+/* Premium Button */
+
+.button{
+
+     background:linear-gradient(
+        135deg,
+        #6C3BFF 0%,
+        #8B5CF6 50%,
+        #EC4899 100%
+    );
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:16px;
+
+    box-shadow:
+        0 15px 35px rgba(108,59,255,.28);
+
+}
+
+.button:hover{
+
+     transform:translateY(-3px) scale(1.02);
+
+    box-shadow:
+        0 22px 45px rgba(108,59,255,.35);
+
+    background:linear-gradient(
+        135deg,
+        #5B21B6 0%,
+        #7C3AED 50%,
+        #DB2777 100%
+    );
+
+}
+/* Premium Journey Progress */
+
+.progress{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin-top:35px;
+}
+
+.dot{
+
+    width:12px;
+    height:12px;
+
+    border-radius:50%;
+
+    background:#ddd3ff;
+
+    transition:.35s ease;
+
+}
+
+.dot.active{
+
+    background:linear-gradient(
+        135deg,
+        #6C3BFF,
+        #EC4899
+    );
+
+    transform:scale(1.35);
+
+    box-shadow:
+        0 0 18px rgba(108,59,255,.35),
+        0 0 8px rgba(236,72,153,.30);
+
+}
+/* ===========================
+   Premium Entrance Animation
+=========================== */
+
+.logo{
+    animation:fadeDown .8s ease;
+}
+
+.tagline{
+    animation:fadeDown 1s ease;
+}
+
+.heading{
+    animation:fadeUp 1.2s ease;
+}
+
+.description{
+    animation:fadeUp 1.4s ease;
+}
+
+.button{
+    animation:fadeUp 1.6s ease;
+}
+
+@keyframes fadeDown{
+
+from{
+opacity:0;
+transform:translateY(-30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+@keyframes fadeUp{
+
+from{
+    opacity:0;
+    transform:translateY(30px);
+}
+
+to{
+    opacity:1;
+    transform:translateY(0);
+}
+
+}
+/* Premium Gallery */
+
+.gallery{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    margin:35px 0;
+}
+
+.gallery-image{
+
+    width:86%;
+
+    display:block;
+
+    margin:0 auto;
+
+    border-radius:20px;
+
+    box-shadow:0 12px 28px rgba(0,0,0,.12);
+
+    transition:.35s ease;
+
+}
+
+.gallery-image:hover{
+
+    transform:scale(1.02);
+
+}
+/* ===========================
+   Premium Badge
+=========================== */
+
+.premium-badge{
+
+    display:inline-block;
+
+    margin-top:8px;
+    margin-bottom:20px;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    background:linear-gradient(
+        135deg,
+        #6C3BFF,
+        #9D4EDD
+    );
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    letter-spacing:.5px;
+
+    box-shadow:0 8px 20px rgba(108,59,255,.25);
+
+    animation:fadeUp 1s ease;
+
+}
+/* ===================================
+   Premium Glass Container
+=================================== */
+
+.container{
+
+    max-width:760px;
+
+    background:rgba(255,255,255,.48);
+   backdrop-filter:blur(24px);
+-webkit-backdrop-filter:blur(24px);
+
+    border-radius:30px;
+
+    padding:50px 38px;
+
+    border:1px solid rgba(255,255,255,.55);
+
+    box-shadow:
+        0 25px 60px rgba(108,59,255,.12),
+        0 10px 30px rgba(0,0,0,.08);
+
+    transition:.45s ease;
+
+}
+.logo{
+
+    font-size:58px;
+
+    text-shadow:0 4px 15px rgba(108,59,255,.18);
+
+}
+
+/* Premium Heading Enhancement */
+
+.heading{
+
+    letter-spacing:0.5px;
+
+    margin-top:10px;
+
+}
+/* Premium Description Enhancement */
+
+.description{
+
+    max-width:620px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+    line-height:1.9;
+
+}
+/* Premium Button Enhancement */
+
+.button{
+
+    min-width:240px;
+
+    font-size:19px;
+
+    letter-spacing:0.5px;
+
+}
+/* Premium Card Hover */
+
+.container{
+
+    transition:all .35s ease;
+
+}
+
+.container:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:
+        0 35px 70px rgba(108,59,255,.18),
+        0 15px 35px rgba(0,0,0,.10);
+
+}
+/* Premium Logo Animation */
+
+.logo{
+
+    transition:.3s;
+
+}
+
+.logo:hover{
+
+    transform:scale(1.05);
+
+}
+/* ===========================
+   Premium Fade Transition
+=========================== */
+
+body{
+
+    animation:pageFade .6s ease;
+
+}
+
+@keyframes pageFade{
+
+from{
+
+    opacity:0;
+
+}
+
+to{
+
+    opacity:1;
+
+}
+
+}
+/* ===================================
+   PREMIUM DEMO HERO
+=================================== */
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+    radial-gradient(circle at top left,
+    rgba(108,59,255,.12),
+    transparent 45%),
+
+    radial-gradient(circle at bottom right,
+    rgba(168,85,247,.10),
+    transparent 40%);
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
+/* ===================================
+   Premium Button Glow
+=================================== */
+
+.button{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.button::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-150%;
+
+    width:60%;
+
+    height:100%;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.60),
+        transparent
+    );
+
+    transition:1s;
+
+
+
+}
+
+.button:hover::before{
+
+    left:160%;
+
+}
+/* ===================================
+   Page Loading Animation
+=================================== */
+
+body{
+
+    opacity:0;
+
+    transition:opacity .6s ease;
+
+}
+
+body.page-loaded{
+
+    opacity:1;
+
+}
+/* ===================================
+   Premium Ambient Lights
+=================================== */
+
+body::before{
+
+    animation:ambientGlow 14s ease-in-out infinite alternate;
+
+}
+
+@keyframes ambientGlow{
+
+    0%{
+
+        opacity:.35;
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        opacity:.50;
+
+        transform:scale(1.03);
+
+    }
+
+    100%{
+
+        opacity:.65;
+
+        transform:scale(1.06);
+
+    }
+
+}
+/* ===================================
+   Confetti Canvas
+=================================== */
+
+#confetti-canvas{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    pointer-events:none;
+
+    z-index:9999;
+
+}
+/* ===================================
+   Gallery Animation
+=================================== */
+
+.gallery-image{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+    animation:galleryFade .8s ease forwards;
+
+}
+
+.gallery-image:nth-child(1){
+
+    animation-delay:.3s;
+
+}
+
+.gallery-image:nth-child(2){
+
+    animation-delay:.8s;
+
+}
+
+.gallery-image:nth-child(3){
+
+    animation-delay:1.3s;
+
+}
+
+@keyframes galleryFade{
+
+from{
+
+    opacity:0;
+
+    transform:translateY(30px);
+
+}
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+}
+.gallery-image{
+
+    cursor:pointer;
+
+    transition:.35s ease;
+
+}
+
+.gallery-image:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:0 18px 35px rgba(108,59,255,.18);
+
+}
+/* ===================================
+   Premium Letter Card
+=================================== */
+
+.letter-card{
+
+    background:#ffffff;
+    max-width:700px;
+    margin:40px auto;
+    padding:40px;
+    border-radius:24px;
+    border:1px solid rgba(108,59,255,.12);
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+    text-align:left;
+
+}
+
+.letter-card .description{
+
+    line-height:2;
+    font-size:18px;
+
+}
+/* ===================================
+   Page Exit Animation
+=================================== */
+
+body.page-exit{
+
+opacity:0;
+
+transform:scale(.98);
+
+transition:.5s ease;
+
+}
+/* ===================================
+   Premium Countdown
+=================================== */
+
+#countdownNumber{
+
+    animation:pulseCountdown 1s ease infinite;
+
+}
+
+@keyframes pulseCountdown{
+
+    0%{
+        transform:scale(1);
+        opacity:1;
+    }
+
+    50%{
+        transform:scale(1.15);
+        opacity:.8;
+    }
+
+    100%{
+        transform:scale(1);
+        opacity:1;
+    }
+
+}
+/* ===================================
+   Premium Typography Standard
+=================================== */
+
+/* Logo */
+
+.logo{
+   font-size:40px;
+
+    font-weight:800;
+
+    letter-spacing:2px;
+
+    color:#5B21B6;
+
+    text-shadow:
+        0 6px 20px rgba(108,59,255,.20);
+}
+
+/* Premium Badge */
+
+.premium-badge{
+    font-size:16px;
+    font-weight:600;
+    letter-spacing:.5px;
+    padding:10px 22px;
+    border-radius:50px;
+
+box-shadow:
+0 12px 25px rgba(108,59,255,.25);
+}
+
+/* Tagline */
+
+.tagline{
+    font-size:18px;
+    font-weight:500;
+    color:#7a6ca8;
+    margin-top:12px;
+    margin-bottom:28px;
+}
+
+/* Main Heading */
+
+.heading{
+     font-size:36px;
+
+    font-weight:800;
+
+    line-height:1.25;
+
+    letter-spacing:.3px;
+
+    color:#322066;
+
+    margin-bottom:22px;
+
+}
+
+/* Description */
+
+.description{
+    font-size:19px;
+
+    line-height:1.9;
+
+    font-weight:400;
+
+    color:#5b5875;
+
+    max-width:650px;
+
+    margin:0 auto 35px;
+}
+
+/* Highlight Text */
+
+.bold-text{
+    font-weight:700;
+
+    color:#4C1D95;
+}
+
+/* Buttons */
+
+.button{
+    font-size:18px;
+    font-weight:600;
+    padding:16px 34px;
+}
+#countdown{
+    margin-bottom:40px;
+}
+/* ===================================
+   PuzzleWish Signature
+=================================== */
+
+.signature{
+
+    margin-top:35px;
+
+    text-align:center;
+
+    color:#6C3BFF;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+    opacity:.9;
+
+}
+
+.signature span{
+
+    font-size:14px;
+
+    color:#777;
+
+    letter-spacing:1px;
+
+}
+/* ===================================
+   Premium Mobile Optimization
+=================================== */
+
+@media (max-width:768px){
+
+    .container{
+
+        width:92%;
+
+        padding:35px 24px;
+
+        background:rgba(255,255,255,.50);
+
+        backdrop-filter:blur(24px);
+        -webkit-backdrop-filter:blur(24px);
+
+    }
+
+    .heading{
+
+        font-size:30px;
+
+    }
+
+    .description{
+
+        font-size:17px;
+
+        line-height:1.8;
+
+    }
+
+}
+/* ===================================
+   Premium Signature
+=================================== */
+
+.signature{
+
+   color:#6C3BFF;
+
+    font-size:26px;
+
+    font-weight:700;
+
+    letter-spacing:.6px;
+
+    line-height:1.8;
+
+    margin-top:20px;
+}
+.created-text{
+    color:#EC4899 !important;
+    font-weight:700;
+}
+
+.heart-text{
+    color:#6C3BFF !important;
+}
+
+.brand-text{
+    color:#6C3BFF !important;
+    font-weight:700;
+}

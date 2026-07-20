@@ -1,0 +1,41 @@
+{
+  "recipient": {
+    "name": "Harsh",
+    "marathiName": "हर्ष"
+  },
+
+  "sender": {
+    "name": "Rahul"
+  },
+
+  "birthday": {
+  "title": "Happy Birthday",
+  "message": "Happy Birthday! 🎉\n\nToday is all about celebrating your wonderful smile and the happiness you bring to everyone around you.\n\nMay your day be filled with lots of fun, laughter, yummy cake, exciting surprises, and beautiful memories.\n\nKeep dreaming big, keep smiling, and always remember that you are truly amazing!\n\nHave the most magical birthday ever! 💜",
+
+"signature": "With lots of love,\nPapa 💜",
+  "puzzlePage": "puzzle.html",
+  "puzzleUrl": "https://www.jigsawplanet.com/?rc=play&pid=18a10dd63a0f&view=iframe",
+  "revealNextPage": "gallery.html"
+},
+
+  "gallery": {
+    "image1": "Assets/Images/gallery1.jpeg",
+    "image2": "Assets/Images/gallery2.jpeg",
+    "image3": "Assets/Images/gallery3.jpeg",
+    "image4": "Assets/Images/gallery4.jpeg",
+    "nextPage": "voice.html"
+  },
+
+  "voice": {
+    "audio": "Audio/voice.mpeg",
+    "nextPage": "message.html"
+  },
+
+  "rakshabandhan": {
+     "title": "रक्षाबंधनाच्या शुभेच्छा 💛",
+    "message": "रक्षाबंधनाच्या खूप खूप शुभेच्छा! 💛\n\nतू नेहमी आनंदी रहा, खूप मोठा हो आणि माझी कायम काळजी घे.\n\nतुझ्यासोबत भांडणं, खेळणं आणि हसणं मला खूप आवडतं.\n\nतू जगातील सर्वात छान दादा आहेस!",
+    "signature": "तुझी लाडकी बहीण,\nअधिरा 💜",
+     "puzzleUrl": "https://www.jigsawplanet.com/?rc=play&pid=1b592a2f867c&view=iframe",
+  "nextPage": "message-rakhi.html"
+  }
+}

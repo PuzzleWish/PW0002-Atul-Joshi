@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PuzzleWish | Premium</title>
+<link rel="icon" type="image/png" href="Assets/Images/favicon.png">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/premium.css">
+
+</head>
+
+<body class="step-2">
+<div class="container">
+
+    <div class="logo">
+        PuzzleWish
+    </div>
+
+    <div class="premium-badge">
+        ✨ Premium Experience ✨
+    </div>
+
+    <h1 class="heading">
+        Your Surprise Is Waiting...
+    </h1>
+
+    <p class="description">
+        <span class="bold-text">
+            Take your time and enjoy solving the puzzle.
+        </span>
+
+        <br><br>
+
+        Your surprise is waiting on the other side. 💜
+    </p>
+
+    <p class="instruction">
+        💡 After completing the puzzle, click
+        <strong>"I've Solved It!"</strong>
+        to continue.
+    </p>
+
+    <iframe
+    id="puzzleFrame"
+    src=""
+    style="width:100%; height:600px; border:none; border-radius:18px;">
+</iframe>
+
+    <br><br>
+
+    <a href="#" id="finishButton" class="button" onclick="showRevealButton(); return false;">
+        I've Solved It!
+    </a>
+
+    <div id="successMessage" class="success-message" style="display:none;"></div>
+
+    <div class="progress">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div>
+
+</div>
+
+<script>
+
+function showRevealButton() {
+
+    const finishBtn = document.getElementById("finishButton");
+    const success = document.getElementById("successMessage");
+
+    finishBtn.style.display = "none";
+    success.style.display = "block";
+
+    let seconds = 5;
+
+    success.innerHTML = `
+        <div style="font-size:30px;">✨</div>
+
+        <div style="margin-top:10px;font-size:24px;font-weight:700;">
+            Congratulations!
+        </div>
+
+        <div style="margin-top:15px;font-size:18px;">
+            You've unlocked your surprise.
+        </div>
+
+        <div style="margin-top:20px;color:#777;font-size:16px;">
+            Preparing your surprise...
+        </div>
+
+        <div id="countdownNumber"
+             style="font-size:48px;
+                    font-weight:bold;
+                    color:#6C3BFF;
+                    margin-top:20px;">
+            5
+        </div>
+    `;
+
+    const countdown = setInterval(function () {
+
+        seconds--;
+
+        document.getElementById("countdownNumber").textContent = seconds;
+
+        if (seconds === 0) {
+
+            clearInterval(countdown);
+
+            window.location.href = "reveal.html";
+
+        }
+
+    }, 1000);
+
+}
+
+</script>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
